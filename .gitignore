@@ -1,0 +1,23 @@
+# Bazel-specific files and directories
+/bazel-*
+/bazel-out/
+/bazel-bin/
+/bazel-testlogs/
+/bazel-*-*-stamp/
+
+# Bazel generated files
+*.bazel
+*.runfiles
+*.pb.go
+
+# General build artifacts
+bazel-*
+
+# Ignore project-specific generated files or directories
+# Add additional patterns based on your project's structure and generated files
+
+# Editor/IDE specific files (optional, based on your preferences)
+.vscode/
+.idea/
+aoc/.env
+*.iml
