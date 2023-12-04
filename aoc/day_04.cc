@@ -24,7 +24,7 @@ std::pair<std::unordered_set<int>, std::unordered_set<int>> read_line(
   auto my_nums = read_numbers(number_split[0]);
   auto winning_nums = read_numbers(number_split[1]);
 
-  return {my_nums, winning_nums};
+  return {std::move(my_nums), std::move(winning_nums)};
 }
 
 long count_winnings(int number, std::vector<std::string>& lines,
