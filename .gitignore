@@ -21,3 +21,4 @@ bazel-*
 .idea/
 aoc/.env
 *.iml
+aoc/day_00.cc
