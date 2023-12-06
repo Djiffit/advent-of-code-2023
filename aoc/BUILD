@@ -46,3 +46,12 @@ cc_binary(
         "@com_google_absl//absl/strings",
     ],
 )
+
+cc_binary(
+    name = "day_06",
+    srcs = ["day_06.cc"],
+    deps = [
+        ":aoc",
+        "@com_google_absl//absl/strings",
+    ],
+)
