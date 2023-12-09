@@ -41,4 +41,15 @@ std::vector<long> read_input_nums(int day) {
   }
   return nums;
 }
+
+struct LeftRight {
+  std::string left;
+  std::string right;
+};
+
+struct Coord {
+  long long y;
+  long long x;
+};
+
 }  // namespace aoc
