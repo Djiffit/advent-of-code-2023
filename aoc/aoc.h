@@ -3,8 +3,14 @@
 #include <filesystem>
 #include <fstream>
 #include <iostream>
+#include <numeric>
+#include <ranges>
 #include <string>
+#include <unordered_map>
+#include <unordered_set>
 #include <vector>
+
+#include "absl/strings/str_split.h"
 
 namespace aoc {
 

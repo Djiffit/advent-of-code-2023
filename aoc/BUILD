@@ -3,6 +3,7 @@ cc_library(
     hdrs = ["aoc.h"],
     data = [
         ".env",
+        "@com_google_absl//absl/strings",
     ],
 )
 
@@ -68,6 +69,15 @@ cc_binary(
 cc_binary(
     name = "day_08",
     srcs = ["day_08.cc"],
+    deps = [
+        ":aoc",
+        "@com_google_absl//absl/strings",
+    ],
+)
+
+cc_binary(
+    name = "day_09",
+    srcs = ["day_09.cc"],
     deps = [
         ":aoc",
         "@com_google_absl//absl/strings",
