@@ -32,7 +32,7 @@ long long solve(bool part_two) {
       | std::views::transform([](const std::string& line) { return std::make_pair(line.substr(0, 3), LeftRight{line.substr(7, 3), line.substr(12, 3)}); });
   routes.insert(route_vals.begin(), route_vals.end());
   auto lengths = routes
-      | std::views::transform([part_two](const auto& pair) { return pair.first; }) 
+      | std::views::transform([](const auto& pair) { return pair.first; })
       | std::views::filter([part_two](const auto& elem) { return part_two ? elem.at(elem.size() - 1) == 'A' : elem == "AAA"; })
       | std::views::transform([&lines, &routes](const std::string& pos) { return find_loop_size(lines[0], routes, pos); });
   return std::reduce(lengths.begin(), lengths.end(), *lengths.begin(), [](auto acc, auto val) { return std::lcm(acc, val); });
